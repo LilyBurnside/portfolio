@@ -4,35 +4,50 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+    <button class="hamburger hamburger--elastic" type="button" aria-label="Menu" aria-controls="navigation">
+     <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+     </span>
+    </button>
+    <nav role="navigation" class="navigation">
+        <div id="my-links">
+            <span><a href="#home">Top</a></span>
+            <span><a href="#about-me">About me</a></span>
+            <span><a href="#skills">Skills</a></span>
+            <span><a href="#projects">Projects</a></span>
+            <span><a href="#contact-me">Contact me</a></span>
+        </div>
+    </nav>
     <main role="main">
-        <header role="banner">
-            <h1>Hero</h1>
-        </header>
-
-        <section>
-            Section 1
+        <!-- <header role="banner">
+            <h1>Lillian Burnside</h1>
+        </header> -->
+        <section id="home">
+            <h1>Lillian Burnside</h1>
         </section>
 
-        <section>
-            Section 2
+        <section id="about-me">
+            <h2>About me</h2>
         </section>
 
-        <section>
-            Section 3
+        <section id="skills">
+            <h2>Skills</h2>
         </section>
 
-        <section>
-            Project 3
+        <section id="projects">
+            <h2>Projects</h2>
         </section>
         
-        <section>
-            Section 4
+        <section id="contact-me">
+            <h2>Section 4</h2>
         </section>
     </main>
     <footer role="content-info">Footer</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script href="index.js"></script>
 </body>
 </html>
