@@ -167,3 +167,13 @@ article {
   background: #f2ced8ff;
   color: #444;
 }
+
+.bookmark-app {
+  margin: 20px 40px 20px 40px;
+  border-radius: 15px;
+} 
+
+.quiz-app {
+  margin: 20px 40px 20px 40px;
+  border-radius: 15px;
+}
