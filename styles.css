@@ -17,12 +17,6 @@ body {
   padding: 0;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -48,7 +42,7 @@ nav {
 }
 
 #menu-toggle a:hover {
-  color: pink;
+  color: #f2ced8ff;
 }
 
 #menu-toggle input {
@@ -61,7 +55,6 @@ nav {
   cursor: pointer;
   opacity: 0;
   z-index: 2;
-  -webkit-touch-callout: none;
 }
 
 #menu-toggle span {
@@ -70,7 +63,7 @@ nav {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: #cdcdcd;
+  background: #666666ff;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -88,7 +81,7 @@ nav {
 #menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #666666ff;
 }
 
 #menu-toggle input:checked ~ span:nth-last-child(3) {
@@ -106,6 +99,7 @@ nav {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
+  padding-bottom: 100%;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -123,12 +117,53 @@ nav {
   transform: none;
 }
 
-header {
-  padding: 12% 0;
-}
-
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 500px;
+}
+
+hr.home-line {
+  width: 75%;
+}
+
+#about-me {
+  background-color: #f2d8d8ff;
+}
+
+#skills {
+  background-color: #d9d9d9ff;
+}
+
+#projects {
+  background-color: #b7b7b7ff;
+}
+
+article {
+  background-color: #666666ff;
+}
+
+.bookmark-button, .quiz-button {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  border: solid 2px #f2ced8ff;
+  border-radius: 3px;
+  transition: .4s;
+  background: #666666ff;
+  color: #f2ced8ff;
+  font-weight: bold;
+}
+
+.bookmark-button:hover, .quiz-button:hover {
+  background: #f2ced8ff;
+  color: #444;
 }

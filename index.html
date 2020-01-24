@@ -8,31 +8,32 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <nav role="navigation" class="navigation">
-        <div id="menu-toggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-        <ul id="menu">
-            <a href="#home"><li>Top</li></a>
-            <a href="#about-me"><li>About me</li></a>
-            <a href="#skills"><li>Skills</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#contact-me"><li>Contact me</li></a>
-        </ul>
-        </div>
-    </nav>
     <main role="main">
-        <!-- <header role="banner">
-            <h1>Lillian Burnside</h1>
-        </header> -->
+        <nav role="navigation" class="navigation">
+            <div id="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                <a href="#home"><li>Top</li></a>
+                <a href="#about-me"><li>About me</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#contact-me"><li>Contact me</li></a>
+            </ul>
+            </div>
+        </nav>
         <section id="home">
             <h1>Lillian Burnside</h1>
+            <hr class="home-line">
+            <p>A tagline</p>
         </section>
 
         <section id="about-me">
             <h2>About me</h2>
+            <p>I’m Lillian and I’m a web developer based out of Dallas, Tx. While web development is a new endeavor for me I have always loved learning, I learn languages (like the ones humans speak) as a hobby and have taught myself knitting as well! When I graduated from the University of North Texas I realized the path I chose for myself was not one of continued learning and I knew that was not the right fit for me. One day when I was playing video games I just thought “Wait I could do that!” and while learning to code to make games didn’t stick around long it did spark my interest in what else coding can do. Today, I am learning to make web apps and websites like you’ll see below! 
+            </p>
         </section>
 
         <section id="skills">
@@ -40,14 +41,26 @@
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <article class="bookmark-app">
+                <a href="https://thinkful-ei-leopard.github.io/lily-bookmarks-app/"><img border="0" alt="bookmark app" src=""></a>
+                <h3>Project 1</h3>
+                <p>project desciption</p>
+                <button class="bookmark-button" type="button">GitHub</button>
+            </article>
+
+            <article class="quiz-app">
+                <a href="https://thinkful-ei-leopard.github.io/lily-bookmarks-app/"><img border="0" alt="quiz app" src=""></a>
+                <h3>Project 2</h3>
+                <p>project desciption</p>
+                <button class="quiz-button" type="button">GitHub</button>
+            </article>
         </section>
         
         <section id="contact-me">
             <h2>Section 4</h2>
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <!-- <footer role="content-info">Footer</footer> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script href="index.js"></script>
 </body>
