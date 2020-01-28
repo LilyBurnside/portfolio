@@ -218,9 +218,6 @@ article {
 }
 
 @media only screen and (min-width: 700px) {
-  /* .img-container > img {
-    max-height: 200px;
-  } */
 
   #projects {
     display: flex;
