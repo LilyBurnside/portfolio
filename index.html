@@ -3,24 +3,25 @@
 <head>
     <title>Lillian Burnside</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3d6b2c55ca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <main role="main">
-        <nav role="navigation" class="navigation">
+    <main>
+        <nav class="navigation">
             <div id="menu-toggle">
                 <input type="checkbox" />
                 <span></span>
                 <span></span>
                 <span></span>
             <ul id="menu">
-                <a href="#home"><li>Top</li></a>
-                <a href="#about-me"><li>About me</li></a>
-                <a href="#skills"><li>Skills</li></a>
-                <a href="#projects"><li>Projects</li></a>
-                <a href="#contact-me"><li>Contact me</li></a>
+                <li><a href="#home">Top</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact me</a></li>
             </ul>
             </div>
         </nav>
@@ -39,43 +40,44 @@
         <section id="skills">
             <h2>My Skills</h2>
             <div class="img-container">
-                <img class="badge" src="html-badge.png" alt="html badge">
-                <img class="badge" src="css-badge.png" alt="css badge">
-                <img class="badge" src="js-badge.png" alt="javascript badge">
+                <div><i class="fab fa-html5"></i></div>
+                <div><i class="fab fa-css3-alt"></i></div>
+                <div><i class="fab fa-js-square"></i></div>
+                <!--<div><i class="fab fa-react"></i></div>-->
             </div>
         </section>
 
         <section id="projects">
             <article class="bookmark-app">
-                <a href="https://thinkful-ei-leopard.github.io/lily-bookmarks-app/" target="_blank" class="screenshot-img"><img border="0" alt="bookmark app" src="my-bookmarks-app.png" ></a>
+                <a href="https://thinkful-ei-leopard.github.io/lily-bookmarks-app/" target="_blank" class="screenshot-img"><img alt="bookmark app" src="my-bookmarks-app.png" ></a>
                 <h3>My Bookmarks</h3>
                 <p>Web app using APIs to read, write, and delete bookmarks.</p>
                 <p>Uses: HTML | CSS | JQuery | Javascript</p>
-                <a href="https://github.com/thinkful-ei-leopard/lily-bookmarks-app" target="_blank">
-                    <button class="bookmark-button" type="button">GitHub</button>
-                </a>
+                <a href="https://github.com/thinkful-ei-leopard/lily-bookmarks-app" target="_blank" class="bookmark-button">GitHub</a>
+                <a href="https://thinkful-ei-leopard.github.io/lily-bookmarks-app/" target="_blank" class="bookmark-button">Live Page</a>
             </article>
 
             <article class="quiz-app">
-                <a href="https://lilyburnside.github.io/quiz-app/" target="_blank" class="screenshot-img"><img border="0" alt="quiz app" src="quiz-app.png" ></a>
+                <a href="https://lilyburnside.github.io/quiz-app/" target="_blank" class="screenshot-img"><img alt="quiz app" src="quiz-app.png" ></a>
                 <h3>Types of Dogs Quiz</h3>
                 <p>Short quiz that returns pages using user input and saves total score</p>
                 <p>Uses: HTML | CSS | JQuery | Javascript | Web APIs</p>
-                <a href="https://github.com/LilyBurnside/quiz-app" target="_blank" >
-                    <button class="quiz-button" type="button">GitHub</button>
-                </a>
+                <a href="https://github.com/LilyBurnside/quiz-app" target="_blank" class="quiz-button">GitHub</a>
+                <a href="https://lilyburnside.github.io/quiz-app/" target="_blank" class="quiz-button">Live Page</a>
             </article>
         </section>
         
+        <footer>
         <section id="contact-me">
             <div class="logo-container">
-                <a href="https://github.com/LilyBurnside" target="_blank" ><img class="logo" src="github-logo.png" alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/burnside-unt/" target="_blank" ><img class="logo" src="linkedin-logo.png" alt="linkedin logo"></a>
-                <a href="mailto:lillian.burnside@gmail.com" target="_blank" ><img class="logo" src="email-logo.png" alt="email logo"></a>
+                <a href="https://github.com/LilyBurnside" target="_blank" ><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/burnside-unt/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:lillian.burnside@gmail.com" target="_blank" ><i class="far fa-envelope"></i></a>
             </div>
         </section>
+        </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-    <script href="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
