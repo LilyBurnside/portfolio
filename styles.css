@@ -244,14 +244,6 @@ i {
   font-size: 80px;
 }
 
-#cards {
-  transition: 1s;
-}
-
-#next, #prev:hover {
-  cursor: pointer;
-}
-
 @media only screen and (min-width: 800px) {
 
   #cards {
