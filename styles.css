@@ -137,6 +137,7 @@ nav {
 section {
   min-height: 200px;
   padding: 6% 0;
+  box-shadow: 0 0 10px 5px grey;
 }
 
 #home {
@@ -168,14 +169,16 @@ hr.home-line {
 
 #projects {
   background-color: #b7b7b7ff;
+  box-shadow: 0 10px 10px 0 grey, 0 0 10px 5px black;
 }
 
 article {
   background-color: #666666ff;
+  box-shadow: 10px 10px 5px 0px grey;
   color: #f2ced8ff;
 }
 
-.bookmark-button, .quiz-button {
+.bookmark-button, .quiz-button, .plant-button, .hiragana-button {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
@@ -190,20 +193,15 @@ article {
   margin-right: 15px;
 }
 
-.bookmark-button:hover, .quiz-button:hover {
+.bookmark-button:hover, .quiz-button:hover, .plant-button:hover, .hiragana-button:hover {
   background: #f2ced8ff;
   color: #444;
 }
 
-.bookmark-app {
+.bookmark-app, .quiz-app, .plant-app, .hiragana-app {
   margin: 20px 40px 20px 40px;
   border-radius: 15px;
 } 
-
-.quiz-app {
-  margin: 20px 40px 20px 40px;
-  border-radius: 15px;
-}
 
 .screenshot-img img{
   border-radius: 15px 15px 0 0;
@@ -221,9 +219,16 @@ article {
   flex: 1;
 }
 
-.fa-html5, .fa-css3-alt, .fa-js-square, .fa-react{
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-react, .fa-node{
   color: #f2ced8ff;
   width: 90%;
+}
+
+.sql {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+  padding-left: 5px;
 }
 
 i {
@@ -239,11 +244,20 @@ i {
   font-size: 80px;
 }
 
+#cards {
+  transition: 1s;
+}
+
+#next, #prev:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 800px) {
 
-  #projects {
+  #cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
